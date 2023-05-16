@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heart" onclick="handleClick()"></div>
+      <div class="text"></div>
+      <div><h1 class="text2"></h1></div>
+    </div>
+
+    <script>
+      var counter = 0;
+      let text = "";
+      let text2 = "";
+      function handleClick() {
+        counter++;
+        var textDiv = document.querySelector(".text");
+        var textDiv2 = document.querySelector(".text2");
+        if (counter === 1) {
+          text2 = "";
+          text =
+            "Te amo, mi princesa hermsa, te escribi esto desde el fondo de mi corazon espero que te guste";
+        } else if (counter === 2) {
+          text =
+            "Cuatro meses de dulce complicidad, un vínculo que florece con felicidad. Como un suspiro de amor en el viento, nuestra historia se envuelve en sentimiento.";
+        } else if (counter === 3) {
+          text =
+            "En cada abrazo y en cada sonrisa, se afianza la conexión, se eterniza. Los días se vuelven más brillantes y cálidos, con cada instante compartido.";
+        } else if (counter === 4) {
+          text =
+            "Enredados en un baile de caricias y ternura, nuestros corazones se llenan de dulzura. Como notas musicales en perfecta armonía, nuestro amor crece, noche y día.";
+        } else if (counter === 5) {
+          text =
+            "Cuatro meses que se alzan como suspiros, tejiendo la trama de sueños cumplidos. Tu mirada, mi faro en la oscuridad, tu voz, un bálsamo de serenidad.";
+        } else if (counter === 6) {
+          text =
+            "En cada palabra, encuentro mi refugio, en tus brazos, la calma y el resguardo lírico. Juntos, construyendo un sendero de ilusión, forjando una historia llena de pasión.";
+        } else if (counter === 7) {
+          text =
+            "Que estos cuatro meses sean solo el comienzo, de un amor eterno, sin fin, sin despecho. Que cada día sea una pincelada de amor, en el lienzo de nuestro corazón, con fervor.";
+        } else if (counter === 8) {
+          text =
+            "Así, en esta danza de amor que florece, celebramos nuestros meses, sin que desaparece. Sigamos construyendo, escribiendo nuestra canción, porque juntos, somos poesía en fusión.";
+        } else {
+          counter = 0;
+          text2 = "TE AMO MI PRINCESA, ERES LO MEJOR QUE ME A PASADO";
+          text = "";
+        }
+        textDiv.textContent = text;
+        textDiv2.textContent = text2;
+      }
+    </script>
+  </body>
+</html>
